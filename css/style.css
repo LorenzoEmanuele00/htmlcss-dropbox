@@ -12,14 +12,17 @@ img {
 
 /* COMMON */
 .container {
-
+    width: 60%;
+    margin: 0 auto;
+    /* debug */
+    background-color: green;
 }
 
 .container-hero-foot {
     width: 70%;
     margin: 0 auto;
+    /* debug */
     background-color: green;
-    
 }
 
 .flex {
@@ -44,7 +47,9 @@ header {
 /* HERO*/
 .hero {
     padding-top: 60px;
+    /* debug */
     background-color: lightskyblue;
+    margin-bottom: 20px;
 }
 
 .hero-txt{
@@ -63,7 +68,39 @@ header {
 
 
 /* MAIN */
+.flex-plan {
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
+.col {
+    width: calc( 100% / 3 - 40px )  ;
+    /* debug */
+    min-height: 300px;
+    background-color: blueviolet;
+    padding: 10px;
+}
+.card {
+    /* debug */
+    min-height: 300px;
+    background-color: white;
+}
+
+.horizontal-col {
+    width: 100%;
+    /* debug */
+    min-height: 50px;
+    background-color: blueviolet;
+    padding: 10px;
+}
+
+.horizontal-card {
+    /* debug */
+    background-color: white;
+    width: 100%;
+    min-height: 50px;
+}
 
 
 /* FOOTER */
