@@ -138,6 +138,7 @@ header {
 
 /* sec: 500000 */
 .find-more {
+    /* debug */
     background-color: blueviolet;
     height: 100px;
 }
@@ -145,6 +146,7 @@ header {
 /* cubes */
 .square-section {
     width: 100%;
+    /* debug */
     background-color: green;
 }
 
@@ -158,6 +160,7 @@ header {
 }
 
 .square-content {
+    /* debug */
     background-color: white;
     min-height: 200px;
 }
@@ -165,22 +168,37 @@ header {
 /* free trial */
 .free {
     width: 100%;
+    /* debug */
     min-height: 100px;
     background-color: brown;
 }
 
 /* questions */
-li {
+.container li {
     padding: 10px;
+    /* debug */
     background-color: azure;
     list-style-type: none;
 }
 
 .question {
     width: 100%;
-    background-color: blueviolet;
     min-height: 50px;
+    /* debug */
+    background-color: blueviolet;
 }
 
 
 /* FOOTER */
+footer {
+    background-color: black;
+    padding: 10px 0;
+}
+
+.col-foot {
+    width: calc(100% / 5);
+    /* debug */
+    background-color: rgb(246, 133, 240);
+    min-height: 50px;
+    border: 1px solid black;
+}
