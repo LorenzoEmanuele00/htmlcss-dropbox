@@ -4,7 +4,7 @@
     margin: 0;
     padding-block-end: 0;
     font-family: 'Open Sans', sans-serif;
-    font-family: 'Almarai', sans-serif;
+    font-family: 'Almarai', sans-serif; 
 }
 
 img {
@@ -14,10 +14,10 @@ img {
 
 /* COMMON */
 .container {
-    width: 50%;
+    width: 55%;
     margin: 0 auto;
     /* debug */
-    background-color: green;
+    /* background-color: green; */
 }
 
 .container-hero-foot {
@@ -38,9 +38,24 @@ img {
 }
 
 .blu-button {
+    /* display: inline-block; */
     background-color: #0161ff;
     color: white;
     padding: 5px 10px;
+}
+
+.space {
+    margin: 0 5px;
+}
+
+header li,
+.hero li {
+list-style-type: none;
+}
+
+header a,
+.hero a {
+    text-decoration: none;
 }
 
 
@@ -49,6 +64,7 @@ header {
     width: 100%;
     height: 60px;
     position: fixed;
+    z-index: 2;
     background-color: white;
     
 }
@@ -73,13 +89,8 @@ nav{
     gap: 1rem;
 }
 
-li {
-list-style-type: none;
-}
-
-a {
-    text-decoration: none;
-    color: gray;
+nav a {
+    color: lightslategray;
 }
 
 
@@ -120,22 +131,81 @@ a {
 
 
 /* MAIN */
+.plans h2{
+    font-size: 2.5rem;
+}
+
+/* checkbox */
+.chose {
+    margin: 2.5rem 0;
+}
+
+.chose span {
+    display: inline-block;
+    width: 1rem;
+}
+
 .flex-plan {
-    gap: 40px;
+    gap: 20px;
     justify-content: space-between;
 }
 
 .col {
-    width: calc( 100% / 3 - 40px )  ;
-    /* debug */
-    min-height: 300px;
-    background-color: rgb(255, 190, 229);
-    padding: 10px;
+    width: calc( 100% / 3 - 20px );
 }
+
+/* cards content */
+.card-top {
+    border: 1px solid lightslategray;
+    text-align: center;
+    padding: .7rem;
+}
+
 .card {
-    /* debug */
-    min-height: 300px;
-    background-color: white;
+    position: relative;
+    padding: 1rem;
+    border-right: 1px solid lightslategray;
+    border-left: 1px solid lightslategray;
+}
+
+.buy-now {
+    text-decoration: underline;
+}
+
+.button-card {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin: 1.5rem 0;
+}
+
+.card > h4,
+.card-bottom > h4,
+.card-bottom > h5 {
+    padding-bottom: 1rem;
+}
+
+.card > p,
+.card-bottom > p{
+    padding-bottom: 2rem;
+    
+}
+
+.card::after {
+    content: "";
+    background:lightslategray;
+    position: absolute;
+    bottom: -1px;
+    left: 1rem;
+    height: 1px;
+    width: 3rem;
+}
+
+.card-bottom {
+    padding: 2rem 1rem;
+    border-bottom: 1px solid lightslategray;
+    border-right: 1px solid lightslategray;
+    border-left: 1px solid lightslategray;
 }
 
 .horizontal-col {
