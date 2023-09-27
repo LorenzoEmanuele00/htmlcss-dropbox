@@ -332,22 +332,50 @@ nav a {
     min-height: 200px;
 }
 
-/* sec: free trial */
-.free {
-    width: 100%;
-    /* debug */
-    min-height: 100px;
-    background-color: brown;
+/* sec: cta */
+.flex-cta {
+    align-items: center;
+    justify-content: space-around;
 }
 
+.cta {
+    width: 100%;
+    background-color: #b4d0e7;
+    padding: 50px;
+    
+}
+
+.cta h2 {
+    /* padding-left: 100px; */
+    width: 30%;
+    font-size: 2.5rem;
+    color: brown;
+}   
+
+
 /* sec: questions */
-
-
 .question {
     width: 100%;
-    min-height: 50px;
-    /* debug */
-    background-color: blueviolet;
+    padding: 60px 30px;
+}
+
+.question h4{
+    display: inline-block;
+}
+
+.a1 {
+    display: none;
+    padding: 30px;
+}
+
+.q1:hover + .a1 {
+    display: inline-block;
+    background-color: rgb(226, 226, 226);
+}
+
+.a1:hover {
+    display: inline-block;
+    background-color: rgb(226, 226, 226);
 }
 
 
